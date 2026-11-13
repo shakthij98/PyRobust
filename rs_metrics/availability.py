@@ -46,5 +46,6 @@ def calculate_availability(graph, mode, A_dic, num_nodes, **kwargs):
         availabilities = np.array([a for _, _, a in results])
 
         # Normalize by number of nodes
-        return np.sum(availabilities) / num_nodes
+        # return np.sum(availabilities) / num_nodes
+        return np.mean(availabilites)
         
